@@ -15,12 +15,12 @@ Actions:
       service: hello-service
       cluster: hello-cluster
       region: ap-southeast-1
-    Timeout: 5
+    Timeout: 15
     # Required; You can use an environment to access AWS resources.
     Environment:
       Connections:
-        - Name: 390402572929
-          Role: codecatalyst-devops
+        - Role: codecatalyst-devops
+          Name: "390402572929"
       Name: hello-environment
     # Specifies the source and/or artifacts to pass to the action as input.
     Inputs:
